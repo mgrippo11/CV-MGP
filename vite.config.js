@@ -6,7 +6,7 @@ const base = mode === "production" && isGitHubPages ? "/" + folderName : "/";
 
 export default {
   root: "src",
-  base: "/CV-MGP/",
+  base,
   mode,
   publicDir: "../public",
   build: {
