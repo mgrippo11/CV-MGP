@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Martin Grippo</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./index.js"></script>
+</head>
+<body>
+  <button type="button" class="burger" onclick="toggleSidevar()">
+    <img class="burger-icon" src="./assets/skills.png" alt="Skills">
+  </button>
+  <aside class="sideBar">
+    <nav class="nav1">
+      <div>
+        <h2 class="title">HABILIDADES<img src="./assets/Flecha.png" alt="Flecha"></h2>
+        <hr class="hrS"></hr>
+        <ul class="ulS">
+            <li class="title2">-Backend</li>
+            <li><img src="./assets/Check.png" alt="Check">JavaScrip</li>
+            <li><img src="./assets/Check.png" alt="Check">Ansible</li>
+          <li class="title2">-Frontend</li>
+            <li><img src="./assets/Check.png" alt="Check">NodeJs</li>
+            <li><img src="./assets/Check.png" alt="Check">HTML</li>
+            <li><img src="./assets/Check.png" alt="Check">CSS</li>
+            <li><img src="./assets/Check.png" alt="Check">React</li>
+          <li class="title2">-DataBase</li>
+            <li><img src="./assets/Check.png" alt="Check">SQL</li>
+            <li><img src="./assets/Check.png" alt="Check">MySQL</li>
+            <li><img src="./assets/Check.png" alt="Check">MongoDB</li>
+          <li class="title2">-Tools & Infra</li>
+            <li><img src="./assets/Check.png" alt="Check">GitHub</li>
+            <li><img src="./assets/Check.png" alt="Check">AWS</li>
+            <li><img src="./assets/Check.png" alt="Check">Azure</li>
+            <li><img src="./assets/Check.png" alt="Check">WorkSpaceOne</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="title">HOBBIES<img src="./assets/Flecha.png" alt="Flecha"></h2>
+        <hr class="hrS"></hr>
+        <ul class="ulS">
+            <li><img src="./assets/Check.png" alt="Check">Autocad</li>
+            <li><img src="./assets/Check.png" alt="Check">Photoshop</li>
+            <li><img src="./assets/Check.png" alt="Check">Illustrator</li>
+            <li><img src="./assets/Check.png" alt="Check">3D MAx</li>
+            <li><img src="./assets/Check.png" alt="Check">After Effects</li>
+            <li><img src="./assets/Check.png" alt="Check">Premiere Pro</li>
+            <li><img src="./assets/Check.png" alt="Check">Impresión 3D</li>
+            <li><img src="./assets/Check.png" alt="Check">Dibujo / Dibujo Técnico</li>
+            <li><img src="./assets/Check.png" alt="Check">Pintura</li>
+            <li><img src="./assets/Check.png" alt="Check">Grabado</li>
+            <li><img src="./assets/Check.png" alt="Check">Gaffitis / Murales</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="title">IDIOMAS<img src="./assets/Flecha.png" alt="Flecha"></h2>
+        <hr class="hrS"></hr>
+        <ul class="ulS">
+            <li><img src="./assets/Check.png" alt="Check">Español (Nativo)</li>
+            <li><img src="./assets/Check.png" alt="Check">Ingles (Intermedio)</li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <aside class="info">
+    <nav class="nav2">
+      <div class="linkedIn">
+        <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="martin-grippo-palladino" data-version="v1">
+          <a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/martin-grippo-palladino?trk=profile-badge"></a>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- <footer>
+    <p>Copyright: <span id="year"></span> ©</p>
+  </footer> -->
+  <script type="text/javascript">
+    // const year = document.querySelector('#year')
+    // year.innerHTML = new Date().getFullYear()
+
+    const toggleSidevar = () => document.body.classList.toggle("open");
+  </script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</body>
+</html>

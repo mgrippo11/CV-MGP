@@ -1,0 +1,136 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #292E49;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.burger-icon {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+button {
+  z-index: 25;
+  background: 0;
+  position: absolute;
+  margin: 95px 0 0 10px;
+  border: 0;
+}
+
+.sideBar {
+  z-index: 20;
+  position: absolute;
+  background: rgba(124, 124, 124, 0.788);
+  filter: drop-shadow(7px 2px 5px rgba(255, 255, 255, 0.123));
+  top: 80px;
+  height: 650px;
+  width: 70px;
+}
+
+.nav1 {
+  margin: 75px 0;
+  display: none;
+}
+
+.title {
+  padding-left: 10px;
+}
+
+.ulS li {
+  font-weight: 500;
+}
+
+.hrS {
+  height: 5px;
+  width: 200px;
+  margin: -20px 0 5px 0;
+  background-color: rgb(255, 107, 53);
+  border: 1px solid rgb(255, 107, 53);
+  border-radius: 5px;
+}
+
+.ulS {
+  display: none;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+img {
+  width: 20px;
+  vertical-align: middle
+}
+
+.title2 {
+  color: aliceblue;
+  padding: 0 0 0 15px;
+}
+
+.title:hover~ul {
+  display: block;
+}
+
+/* INFO 
+*******************************************
+*/
+.info {
+  z-index: 1;
+  min-width: 370px;
+  width: 90%;
+  height: 1500px;
+  margin: 25px 5%;
+  position: absolute;
+  background: #222;
+  filter: drop-shadow(7px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.linkedIn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* RESPONSIVE 
+*******************************************
+*/
+@media (width >=500px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (width >=500px) {
+  .sideBar {
+    width: 220px;
+    display: block;
+  }
+
+  .nav1 {
+    margin: 0;
+    display: block;
+  }
+}
+
+body.open .sideBar {
+  width: 220px;
+}
+
+body.open .nav1 {
+  display: block;
+}
