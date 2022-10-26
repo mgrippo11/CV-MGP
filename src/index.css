@@ -22,7 +22,7 @@ a {
 }
 
 .burger-icon {
-  width: 40px;
+  width: 30px;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -31,22 +31,22 @@ button {
   z-index: 25;
   background: 0;
   position: absolute;
-  margin: 95px 0 0 10px;
+  margin: 95px 0 0 5px;
   border: 0;
 }
 
 .sideBar {
   z-index: 20;
   position: absolute;
-  background: rgba(124, 124, 124, 0.788);
+  background: rgba(124, 124, 124, 0.5);
   filter: drop-shadow(7px 2px 5px rgba(255, 255, 255, 0.123));
   top: 80px;
-  height: 650px;
-  width: 70px;
+  height: 60px;
+  width: 50px;
 }
 
 .nav1 {
-  margin: 75px 0;
+  margin: 65px 0;
   display: none;
 }
 
@@ -109,13 +109,11 @@ img {
 /* RESPONSIVE 
 *******************************************
 */
-@media (width >=500px) {
+@media (width >=750px) {
   .burger {
     display: none;
   }
-}
 
-@media (width >=500px) {
   .sideBar {
     width: 220px;
     display: block;
@@ -129,6 +127,8 @@ img {
 
 body.open .sideBar {
   width: 220px;
+  height: 650px;
+  background: rgba(124, 124, 124, 0.95);
 }
 
 body.open .nav1 {
