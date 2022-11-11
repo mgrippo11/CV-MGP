@@ -91,7 +91,7 @@ img {
 */
 .info {
   z-index: 1;
-  min-width: 370px;
+  min-width: 300px;
   width: 90%;
   height: 1500px;
   margin: 25px 5%;
@@ -101,9 +101,27 @@ img {
 }
 
 .linkedIn {
+  z-index: 5;
   margin-top: 25px;
   display: flex;
   justify-content: space-around;
+}
+
+.cardInfo {
+  z-index: 2;
+  border-radius: 2%;
+  margin: 0 10%;
+  padding: 15px 0;
+  justify-content: space-around;
+  background-color: rgb(255, 107, 53);
+  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cardInfoText {
+  margin: 3px 0;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 /* RESPONSIVE 
@@ -116,12 +134,18 @@ img {
 
   .sideBar {
     width: 220px;
+    height: 650px;
     display: block;
   }
 
   .nav1 {
     margin: 0;
     display: block;
+  }
+
+  .cardInfo {
+    margin: 0 25%;
+    padding: 25px;
   }
 }
 
